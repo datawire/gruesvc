@@ -13,13 +13,10 @@ Version = "0.0.1"
 
 pg8000.paramstyle = 'named'
 
-logPath = "/tmp/flasklog"
-
 MyHostName = socket.gethostname()
 MyResolvedName = socket.gethostbyname(socket.gethostname())
 
 logging.basicConfig(
-    # filename=logPath,
     level=logging.DEBUG, # if appDebug else logging.INFO,
     format="%%(asctime)s gruesvc %s %%(levelname)s: %%(message)s" % Version,
     datefmt="%Y-%m-%d %H:%M:%S"
