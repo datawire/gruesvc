@@ -9,7 +9,7 @@ import uuid
 import pg8000
 from flask import Flask, jsonify, request
 
-Version = "0.0.1"
+Version = "0.1.0"
 
 pg8000.paramstyle = 'named'
 
